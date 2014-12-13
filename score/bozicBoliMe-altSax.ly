@@ -1,4 +1,5 @@
 \version "2.18.0"
+\include "naturalizeMusic.ly"
 
 \header {
   title = "bozic blu"
@@ -140,7 +141,7 @@ altSax = \relative c {
 
 \score {
   <<
-    \new Staff \transpose es c \altSax
+    \new Staff \naturalizeMusic \transpose es c' \altSax
   >>
   \layout {}
   \midi {}

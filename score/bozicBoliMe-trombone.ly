@@ -5,7 +5,7 @@
 }
 
 trombone = \relative c {
-  \set Staff.instrumentName = "Trombone"
+  \set Staff.instrumentName = "trombone"
   \clef bass
   g''8 r8 f r8 dis f r8 g 
   | % 2
