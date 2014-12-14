@@ -1,4 +1,5 @@
 \version "2.18.0"
+\include "naturalizeMusic.ly"
 
 \header {
   title = "bozic blu"
@@ -70,7 +71,7 @@ trumpet = \relative c {
 
 \score {
   <<
-    \new Staff { \trumpet }
+    \new Staff  \naturalizeMusic \transpose c d \trumpet
   >>
   \layout {}
   \midi {}
