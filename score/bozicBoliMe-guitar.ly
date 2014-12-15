@@ -71,68 +71,68 @@ theNotes = \relative c' {
   \improvisationOn
   \set Staff.instrumentName = "Guitar"
   \numericTimeSignature
-  h4 h4 h8 h r8 h8 |
+  c4 c4 c8 c r8 c8 |
   r1 |
-  h4 h h h |
-  h8 h r8 h4. h4 |
-  r8 h8 ~ h2. |
-  h4 r8 h8 r2 |
+  c4 c c c |
+  c8 c r8 c4. c4 |
+  r8 c8 ~ c2. |
+  c4 r8 c8 r2 |
   \bar "||"
   
   \override Voice.Stem.stencil = ##f
-  \repeat unfold 15 {h4 h h h |}
-  h4 h h 
+  \repeat unfold 15 {c4 c c c |}
+  c4 c c 
   \override Voice.Stem.stencil = ##t
-  h8 h |
+  c8 c |
   \override Voice.Stem.stencil = ##f
-  r4 h4 h h |
-  \repeat unfold 13 {h4 h h h |}
+  r4 c4 c c |
+  \repeat unfold 13 {c4 c c c |}
   \override Voice.Stem.stencil = ##t
-  r4 h4 h4. h8 |
-  \override Voice.Stem.stencil = ##f
-  r1 |
-  \bar "||"
-  
-  \repeat unfold 6 {h4 h h h |}
-  \override Voice.Stem.stencil = ##t
-  h4 r4. h4. |
-  h4 r4. h8 h4 |
-  \override Voice.Stem.stencil = ##f
-  \bar "||"
-  
-  \repeat unfold 6 {h4 h h h |}
-  \override Voice.Stem.stencil = ##t
-  r4 h2 h4 |
-  h4 h h8 h r8 h8 |
-  \override Voice.Stem.stencil = ##f
-  \bar "||"
-  
-  \repeat unfold 30 {h4 h h h |}
-  \override Voice.Stem.stencil = ##t
-  r4 h4 h8 h h h |
+  r4 c4 c4. c8 |
   \override Voice.Stem.stencil = ##f
   r1 |
   \bar "||"
   
-  \repeat unfold 6 {h4 h h h |}
+  \repeat unfold 6 {c4 c c c |}
   \override Voice.Stem.stencil = ##t
-  h4 r4. h4. |
-  h4 r4. h4. |
+  c4 r4. c4. |
+  c4 r4. c8 c4 |
   \override Voice.Stem.stencil = ##f
   \bar "||"
   
-  \repeat unfold 21 {h4 h h h |}
+  \repeat unfold 6 {c4 c c c |}
   \override Voice.Stem.stencil = ##t
-  h4 h8 h r2 |
-  r8 h8 r4 h4. h8 |
+  r4 c2 c4 |
+  c4 c c8 c r8 c8 |
+  \override Voice.Stem.stencil = ##f
+  \bar "||"
+  
+  \repeat unfold 30 {c4 c c c |}
+  \override Voice.Stem.stencil = ##t
+  r4 c4 c8 c c c |
   \override Voice.Stem.stencil = ##f
   r1 |
   \bar "||"
   
-  \repeat unfold 10 {h4 h h h |}
+  \repeat unfold 6 {c4 c c c |}
   \override Voice.Stem.stencil = ##t
-  r8 h4. h8 r8 h8 r8 |
-  h8 h h h r2 |
+  c4 r4. c4. |
+  c4 r4. c4. |
+  \override Voice.Stem.stencil = ##f
+  \bar "||"
+  
+  \repeat unfold 21 {c4 c c c |}
+  \override Voice.Stem.stencil = ##t
+  c4 c8 c r2 |
+  r8 c8 r4 c4. c8 |
+  \override Voice.Stem.stencil = ##f
+  r1 |
+  \bar "||"
+  
+  \repeat unfold 10 {c4 c c c |}
+  \override Voice.Stem.stencil = ##t
+  r8 c4. c8 r8 c8 r8 |
+  c8 c c c r2 |
   \override Voice.Stem.stencil = ##f
   \bar "|."
 }
