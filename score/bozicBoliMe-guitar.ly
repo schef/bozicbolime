@@ -14,7 +14,7 @@
 }
 
 \paper {
-  #(set-paper-size "letter")
+  #(set-paper-size "a4")
 %  paper-height = 11\in
 %  paper-width = 8.5\in
 %  indent = 0\mm
