@@ -1,5 +1,5 @@
 \version "2.18.2"
-#(set-global-staff-size 18)
+%#(set-global-staff-size 18)
 \include "jazzchords.ily"
 \include "LilyJAZZ.ily"
 \language "deutsch"
@@ -61,6 +61,29 @@ realBookTitle = \markup {
 \header {
   title = \realBookTitle
   tagline = ##f
+}
+
+hideNotes = { \hideNotes \override MultiMeasureRest #'transparent = ##t }
+unHideNotes = { \revert MultiMeasureRest #'transparent \unHideNotes }
+
+marks = {
+  \set Score.markFormatter = #format-mark-box-barnumbers
+  \compressFullBarRests
+  \hideNotes
+  R1*6 \mark \default \bar "||" %7
+  R1*16 \mark \default %23
+  R1*16 \mark \default \bar "||" %39
+  R1*8 \mark \default \bar "||" %47
+  R1*8 \mark \default \bar "||" %55
+  R1*16 \mark \default
+  R1*16 \mark \default \bar "||" %87
+  R1*8 \mark \default \bar "||" %95
+  R1*8 \mark \default \bar "||" %103
+  R1*16 \mark \default \bar "||" %119
+  R1*12 \bar "|." % 130
+
+  \unHideNotes
+  \bar "|."
 }
 
 theNotes = \relative c'' {
@@ -317,7 +340,7 @@ theWords = \lyricmode {
 \score {
   <<
     \new ChordNames \theChords
-    \new Voice = chant \theNotes
+    \new Staff << \marks \theNotes >>
     %\new Lyrics \lyricsto chant \theWords
   >>
   \layout {
